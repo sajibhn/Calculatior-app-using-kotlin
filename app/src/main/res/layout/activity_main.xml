@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#454C53"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonLayout"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/inputex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:clickable="false"
+            android:cursorVisible="true"
+            android:focusable="true"
+            android:paddingTop="10dp"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text=""
+            android:textAlignment="viewEnd"
+            android:textColor="@color/white"
+            android:textSize="50sp"
+            android:verticalScrollbarPosition="right" />
+
+        <EditText
+            android:id="@+id/resulttex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:clickable="false"
+            android:ellipsize="end"
+            android:focusable="false"
+            android:text=""
+            android:textAlignment="viewEnd"
+            android:textColor="#D1CECE"
+            android:textSize="25sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <!-- ============== first column  ===================-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <android.widget.Button
+                android:id="@+id/clear"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/ripple"
+                android:gravity="center"
+                android:text="C"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <android.widget.Button
+                android:id="@+id/button7"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/ripple"
+                android:gravity="center"
+                android:text="7"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <android.widget.Button
+                android:id="@+id/button4"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/ripple"
+                android:gravity="center"
+                android:text="4"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <android.widget.Button
+                android:id="@+id/button1"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/ripple"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <android.widget.Button
+                android:id="@+id/button00"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/ripple"
+                android:gravity="center"
+                android:text="00"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+        <!-- ============== second column ===================-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <android.widget.Button
+                android:id="@+id/buttonpercent"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/ripple"
+                android:gravity="center"
+                android:text="%"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <android.widget.Button
+                android:id="@+id/button8"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/ripple"
+                android:gravity="center"
+                android:text="8"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <android.widget.Button
+                android:id="@+id/button5"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/ripple"
+                android:gravity="center"
+                android:text="5"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <android.widget.Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/ripple"
+                android:gravity="center"
+                android:text="2"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <android.widget.Button
+                android:id="@+id/button0"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/ripple"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+        <!-- ============== Third column  ===================-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <android.widget.Button
+                android:id="@+id/buttonbackspace"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/ripple"
+                android:gravity="center"
+                android:text=""
+                android:drawableTop="@drawable/ic_backspace"
+                android:textColor="@color/white"
+                android:drawableTint="@color/white"
+                android:paddingTop="25dp"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <android.widget.Button
+                android:id="@+id/button9"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/ripple"
+                android:gravity="center"
+                android:text="9"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <android.widget.Button
+                android:id="@+id/button6"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/ripple"
+                android:gravity="center"
+                android:text="6"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <android.widget.Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/ripple"
+                android:gravity="center"
+                android:text="3"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <android.widget.Button
+                android:id="@+id/buttondot"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/ripple"
+                android:gravity="center"
+                android:text="."
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!-- ============== Fourth column  ===================-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <android.widget.Button
+                android:id="@+id/buttondivide"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/ripple"
+                android:gravity="center"
+                android:text="÷"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <android.widget.Button
+                android:id="@+id/buttonmultiply"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/ripple"
+                android:gravity="center"
+                android:text="*"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <android.widget.Button
+                android:id="@+id/buttonminus"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/ripple"
+                android:gravity="center"
+                android:text="−"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <android.widget.Button
+                android:id="@+id/buttonadd"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/ripple"
+                android:gravity="center"
+                android:text="+"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <android.widget.Button
+                android:id="@+id/buttonequal"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/ripple"
+                android:gravity="center"
+                android:text="="
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
