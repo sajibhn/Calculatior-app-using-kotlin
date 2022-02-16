@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -28,7 +27,8 @@
             android:textAlignment="viewEnd"
             android:textColor="@color/white"
             android:textSize="50sp"
-            android:verticalScrollbarPosition="right" />
+            android:verticalScrollbarPosition="right"
+            tools:ignore="Autofill,LabelFor,TextFields" />
 
         <EditText
             android:id="@+id/resulttex"
@@ -41,7 +41,8 @@
             android:text=""
             android:textAlignment="viewEnd"
             android:textColor="#D1CECE"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            tools:ignore="Autofill,LabelFor,TextFields" />
 
     </LinearLayout>
 
@@ -50,7 +51,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:baselineAligned="false">
 
         <!-- ============== first column  ===================-->
         <LinearLayout
@@ -65,7 +67,7 @@
                 android:layout_height="80dp"
                 android:background="@drawable/ripple"
                 android:gravity="center"
-                android:text="C"
+                android:text="@string/c"
                 android:textColor="@color/white"
                 android:textSize="30sp"
                 android:textStyle="bold" />
@@ -76,7 +78,7 @@
                 android:layout_height="80dp"
                 android:background="@drawable/ripple"
                 android:gravity="center"
-                android:text="7"
+                android:text="@string/_7"
                 android:textColor="@color/white"
                 android:textSize="30sp"
                 android:textStyle="bold" />
@@ -87,7 +89,7 @@
                 android:layout_height="80dp"
                 android:background="@drawable/ripple"
                 android:gravity="center"
-                android:text="4"
+                android:text="@string/_4"
                 android:textColor="@color/white"
                 android:textSize="30sp"
                 android:textStyle="bold" />
@@ -98,7 +100,7 @@
                 android:layout_height="80dp"
                 android:background="@drawable/ripple"
                 android:gravity="center"
-                android:text="1"
+                android:text="@string/_1"
                 android:textColor="@color/white"
                 android:textSize="30sp"
                 android:textStyle="bold" />
@@ -109,7 +111,7 @@
                 android:layout_height="80dp"
                 android:background="@drawable/ripple"
                 android:gravity="center"
-                android:text="00"
+                android:text="@string/_00"
                 android:textColor="@color/white"
                 android:textSize="30sp"
                 android:textStyle="bold" />
@@ -128,7 +130,7 @@
                 android:layout_height="80dp"
                 android:background="@drawable/ripple"
                 android:gravity="center"
-                android:text="%"
+                android:text="@string/percentage"
                 android:textColor="@color/white"
                 android:textSize="30sp"
                 android:textStyle="bold" />
@@ -139,7 +141,7 @@
                 android:layout_height="80dp"
                 android:background="@drawable/ripple"
                 android:gravity="center"
-                android:text="8"
+                android:text="@string/_8"
                 android:textColor="@color/white"
                 android:textSize="30sp"
                 android:textStyle="bold" />
@@ -150,7 +152,7 @@
                 android:layout_height="80dp"
                 android:background="@drawable/ripple"
                 android:gravity="center"
-                android:text="5"
+                android:text="@string/_5"
                 android:textColor="@color/white"
                 android:textSize="30sp"
                 android:textStyle="bold" />
@@ -161,7 +163,7 @@
                 android:layout_height="80dp"
                 android:background="@drawable/ripple"
                 android:gravity="center"
-                android:text="2"
+                android:text="@string/_2"
                 android:textColor="@color/white"
                 android:textSize="30sp"
                 android:textStyle="bold" />
@@ -172,7 +174,7 @@
                 android:layout_height="80dp"
                 android:background="@drawable/ripple"
                 android:gravity="center"
-                android:text="0"
+                android:text="@string/_0"
                 android:textColor="@color/white"
                 android:textSize="30sp"
                 android:textStyle="bold" />
@@ -197,7 +199,8 @@
                 android:drawableTint="@color/white"
                 android:paddingTop="25dp"
                 android:textSize="30sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                tools:targetApi="m" />
 
             <android.widget.Button
                 android:id="@+id/button9"
@@ -205,7 +208,7 @@
                 android:layout_height="80dp"
                 android:background="@drawable/ripple"
                 android:gravity="center"
-                android:text="9"
+                android:text="@string/_9"
                 android:textColor="@color/white"
                 android:textSize="30sp"
                 android:textStyle="bold" />
@@ -216,7 +219,7 @@
                 android:layout_height="80dp"
                 android:background="@drawable/ripple"
                 android:gravity="center"
-                android:text="6"
+                android:text="@string/_6"
                 android:textColor="@color/white"
                 android:textSize="30sp"
                 android:textStyle="bold" />
@@ -227,7 +230,7 @@
                 android:layout_height="80dp"
                 android:background="@drawable/ripple"
                 android:gravity="center"
-                android:text="3"
+                android:text="@string/_3"
                 android:textColor="@color/white"
                 android:textSize="30sp"
                 android:textStyle="bold" />
@@ -238,7 +241,7 @@
                 android:layout_height="80dp"
                 android:background="@drawable/ripple"
                 android:gravity="center"
-                android:text="."
+                android:text="@string/dot"
                 android:textColor="@color/white"
                 android:textSize="30sp"
                 android:textStyle="bold" />
@@ -259,7 +262,7 @@
                 android:layout_height="80dp"
                 android:background="@drawable/ripple"
                 android:gravity="center"
-                android:text="÷"
+                android:text="@string/divide"
                 android:textColor="@color/white"
                 android:textSize="30sp"
                 android:textStyle="bold" />
@@ -270,7 +273,7 @@
                 android:layout_height="80dp"
                 android:background="@drawable/ripple"
                 android:gravity="center"
-                android:text="*"
+                android:text="@string/multiply"
                 android:textColor="@color/white"
                 android:textSize="30sp"
                 android:textStyle="bold" />
@@ -281,7 +284,7 @@
                 android:layout_height="80dp"
                 android:background="@drawable/ripple"
                 android:gravity="center"
-                android:text="−"
+                android:text="@string/minus"
                 android:textColor="@color/white"
                 android:textSize="30sp"
                 android:textStyle="bold" />
@@ -292,7 +295,7 @@
                 android:layout_height="80dp"
                 android:background="@drawable/ripple"
                 android:gravity="center"
-                android:text="+"
+                android:text="@string/plus"
                 android:textColor="@color/white"
                 android:textSize="30sp"
                 android:textStyle="bold" />
@@ -303,7 +306,7 @@
                 android:layout_height="80dp"
                 android:background="@drawable/ripple"
                 android:gravity="center"
-                android:text="="
+                android:text="@string/equal"
                 android:textColor="@color/white"
                 android:textSize="30sp"
                 android:textStyle="bold" />
